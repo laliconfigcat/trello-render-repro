@@ -9,6 +9,8 @@ declare global {
   }
 }
 
+const CONFIGCAT_ICON = './cat_red.svg';
+
 @Component({
   selector: 'app-bootstrap',
   imports: [],
@@ -27,6 +29,7 @@ export class Bootstrap implements OnInit {
     return Promise.resolve([
       {
         text: 'Open modal',
+        icon: CONFIGCAT_ICON,
         callback: (t: CallbackHandler) => {
           return t.modal({
             title: 'Modal',
@@ -41,6 +44,7 @@ export class Bootstrap implements OnInit {
   private readonly getCardBackSection = async (t: CallbackHandler) => {
     return {
       title: 'ConfigCat',
+      icon: CONFIGCAT_ICON,
       content: {
         type: 'iframe',
         url: t.signUrl('./content'),
