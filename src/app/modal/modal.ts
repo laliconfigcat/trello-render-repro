@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class Modal {
   call() {
-    window['TrelloPowerUp'].iframe().set('card', 'shared', 'updatedAt', new Date());
+    window['TrelloPowerUp'].iframe().set('card', 'shared', 'updatedAt', { updatedAt: new Date() });
   }
 }
