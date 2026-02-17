@@ -21,8 +21,11 @@ Set up the board buttons and card back section capabilities.
 
 Repro:
 
-Add the powerup to a board.
-Check if the card back section is showing 0.
-
-Open the modal with the powerup button. Click on the button on the modal. Check if the counter is increased on the card back section.
-Close the modal. Open it again. Click on the button on the modal - the counter will not be increased.
+1. Add the powerup to a board.
+2. Check if the card back section is showing 0.
+3. Open the modal with the powerup button. 
+4. Click on the button on the modal. 
+5. Check if the counter is increased on the card back section.
+6. Close the modal. 
+7. Open the modal again. 
+8. Click on the button on the modal - the counter will not be increased.
