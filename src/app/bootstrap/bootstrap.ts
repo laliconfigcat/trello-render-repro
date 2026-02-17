@@ -41,14 +41,14 @@ export class Bootstrap implements OnInit {
     ]);
   };
 
-  private readonly getCardBackSection = async (t: CallbackHandler) => {
-    return {
+  private readonly getCardBackSection = (t: CallbackHandler) => {
+    return Promise.resolve({
       title: 'ConfigCat',
       icon: CONFIGCAT_ICON,
       content: {
         type: 'iframe',
         url: t.signUrl('./content'),
       },
-    } as CardBackSection;
+    } as CardBackSection);
   };
 }
