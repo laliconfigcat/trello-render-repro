@@ -17,7 +17,7 @@ ngrok http --host-header=rewrite https://localhost:4200
 ```
 
 Create a new Power-Up pointing to the ngrok url.
-Set up the board buttons and card back section capabilities.
+Set up the card button and card back section capabilities.
 
 Repro:
 

@@ -33,7 +33,7 @@ export class Bootstrap implements OnInit {
         callback: (t: CallbackHandler) => {
           return t.modal({
             title: 'Modal',
-            url: './modal',
+            url: t.signUrl('./modal'),
             height: 380,
           });
         },
